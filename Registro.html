@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <!-- para los icons de redes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- En la seccion de script esta la estructura del header -->
+    </header>
+    <main>
+        <!-- sección para el registro -->
+        <section class="eventosRegistro">
+            <h1>Registro a Eventos</h1>
+            <form>
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                </div>
+
+                <div class="form-group">
+                    <label for="correo">Correo institucional:</label>
+                    <input type="text" name="correo" id="correo" placeholder="Ejemplo@uamv.edu.ni">
+                </div>
+
+                <div class="form-group">
+                    <label for="carrera">Carrera:</label>
+                    <select name="carrera" id="carrera">
+                        <option value="Ing. Sistemas">Ing. Sistemas</option>
+                        <option value="Ing. Civil ">Ing. Civil</option>
+                        <option value="Administracion de empresas">Administracion de empresas</option>
+                    </select>
+                </div>
+
+
+                <div class="form-container">
+                    <label for="registro">Registro: </label>
+                    <div class="select-btn">
+                        <span class="btn-text">Evento a Asistir</span>
+                        <span class="arrow-down">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                    </div>
+
+                    <ul class="event-list">
+                        <!-- Primera opcion -->
+                        <li class="events">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-icon"></i>
+                            </span>
+                            <span class="event-text">Uso de GitHub en proyectos colaborativos</span>
+                        </li>
+                        <!-- Segunda Opcion -->
+                        <li class="events">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-icon"></i>
+                            </span>
+                            <span class="event-text"> Introducción a Docker para entornos de desarrollo.</span>
+                        </li>
+                        <!-- Tercera opcion -->
+                        <li class="events">
+                            <span class="checkbox">
+                                <i class="fa-solid fa-check check-icon"></i>
+                            </span>
+                            <span class="event-text">Configuración básica de servidores Linux.
+                            </span>
+                        </li>
+                    </ul>
+                 </div>
+                 <button type="submit" id="btnRegistrar">Registrarme</button>
+            </form>
+        </section> 
+    </main>
+    <!-- footer -->
+    <footer>
+        <!-- Se encuentra generado con javascript -->
+    </footer>
+    <script src="register.js"></script>
+</body>
+</html>
